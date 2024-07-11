@@ -1,0 +1,35 @@
+[
+    {
+        "name": "Ryan Gaus",
+        "type": "teacher",
+        "address": "201 E Jefferson St",
+        "city": "Syracuse",
+        "state": "NY",
+        "age": "25",
+        "favorite_colors":["blue", "yellow", "black"
+        ]
+    },
+    {
+        "name": "Suzie John",
+        "type": "student",
+        "address": "235 Harrison St",
+        "city": "Syracuse",
+        "state": "NY",
+        "age": "30",
+        "favorite_colors":["green", "pink","gray"]
+    }
+]
+
+
+[{"name":"Ryan Gaus","type":"teacher","address":"201 E Jefferson St","city":"Syracuse","state":"NY","age":"25","favorite_colors":["red","yellow"]},
+    {
+        "name": "Suzie John",
+        "type": "student",
+        "address": "235 Harrison St",
+        "city": "Syracuse",
+        "state": "NY",
+        "age": "30",
+        "favorite_colors": ["black", "green"]
+    }
+]
+

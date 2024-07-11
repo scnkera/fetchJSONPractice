@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Number list example</title>
+    </head>
+    <body>
+        <p>Number list example! Look at the javascript console.</p>
+        <div id="total"></div>
+        <script>
+            console.log('hello world!')
+            const responsePromise = fetch('http://careersincode.xyz/number-list', {
+                method: 'GET'
+            });
+
+            responsePromise.then(response => {
+                console.log(response);
+                const responseBodyPromise = response.text();
+                responseBodyPromise.then(body => {
+                    console.log(body);
+                    // 1. Parse the body into a javacript array
+                    const array = JSON.parse(body);
+                    console.log(array)
+                    // 2. Compute the sum
+                    let n = 0;
+                    for (const value of array) {
+                        n = n + value;
+                    }
+                    // 3. Log it out
+                    console.log(n)
+                    document.getElementById("total").innerHTML = n;
+
+                    // Your task:
+                    //
+                    // Inside the callback in the .then, write a program to
+                    // extract the array of numbers from the response. Then,
+                    // sum the numbers in the array all up to produce a
+                    // total. Log the total out with console.log!
+                })
+            });
+        </script>
+    </body>
+</html>
